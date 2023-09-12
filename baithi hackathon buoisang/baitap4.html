@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const userInput = prompt("Nhập chuỗi kí tự gồm chữ và số:");
+        const numbersOnly = keepOnlyNumbers(userInput);
+        function keepOnlyNumbers(inputst) {
+            let resultst = "";
+
+            for (let i = 0; i < inputst.length; i++) {
+                const currentChar = inputst[i];
+                if (!isNaN(currentChar)) {
+                    resultst += currentChar;
+                }
+            }
+            return resultst;
+        }
+        console.log("Chỉ giữ lại các số:", numbersOnly);
+    </script>
+</body>
+
+</html>

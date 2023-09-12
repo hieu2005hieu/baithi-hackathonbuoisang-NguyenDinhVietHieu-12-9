@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function reverseString(inputString) {
+            let word = inputString.split(" "); 
+            let reversedWords = word.map(word => word.split("").reverse().join(""));
+            let reversedString = reversedWords.join(" ");
+
+            return reversedString;
+        }
+
+        let userInput = prompt("moi ban nhap chuoi:");
+        let reversed = reverseString(userInput);
+
+        console.log("dao nguoi", reversed);
+
+    </script>
+</body>
+
+</html>
