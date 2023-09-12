@@ -13,15 +13,11 @@
             let word = inputString.split(" "); 
             let reversedWords = word.map(word => word.split("").reverse().join(""));
             let reversedString = reversedWords.join(" ");
-
             return reversedString;
         }
-
         let userInput = prompt("moi ban nhap chuoi:");
         let reversed = reverseString(userInput);
-
         console.log("dao nguoi", reversed);
-
     </script>
 </body>
 

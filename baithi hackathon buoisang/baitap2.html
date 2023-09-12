@@ -9,7 +9,7 @@
 
 <body>
     <script>
-        let a = prompt("Mời bạn nhập số nguyên cách nhau bằng dấu phẩy");
+        let a = prompt("nhập số nguyên cách nhau bằng dấu phẩy");
         let numbers = a.split(",").map(Number);
         function contNumber(number) {
             if (number <= 1) {
@@ -22,13 +22,13 @@
             }
             return true;
         }
-        let total = 0;
+        let conts = 0;
         for (let i = 0; i < numbers.length; i++) {
             if (contNumber(numbers[i])) {
-                total += numbers[i];
+                conts += numbers[i];
             }
         }
-        console.log("tong:", total);
+        console.log("tong:", conts);
     </script>
 </body>
 

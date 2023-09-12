@@ -9,11 +9,10 @@
 
 <body>
     <script>
-        const userInput = prompt("Nhập chuỗi kí tự gồm chữ và số:");
+        const userInput = prompt("Nhập chuỗi chữ và số:");
         const numbersOnly = keepOnlyNumbers(userInput);
         function keepOnlyNumbers(inputst) {
             let resultst = "";
-
             for (let i = 0; i < inputst.length; i++) {
                 const currentChar = inputst[i];
                 if (!isNaN(currentChar)) {
@@ -22,7 +21,7 @@
             }
             return resultst;
         }
-        console.log("Chỉ giữ lại các số:", numbersOnly);
+        console.log("giữ lại là", numbersOnly);
     </script>
 </body>
 
